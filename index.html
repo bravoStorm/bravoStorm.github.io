@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bravo Storm</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/codes.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="barraHeader">
+            <img id="headerLogo" src="images/logoBC.png">
+
+            <img id="dropListIcon" src="images/droplist.png" onclick="changeDropListHeader()">
+            <nav id="headerNav">
+                <ul id="headerUL">
+                    <li>Fale Conosco</li>
+                    <li>Quem Somos</li>
+                    <li>Solicitar cotação</li>
+                    <li>Trabalhe Conosco</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="bannerHeader">
+            <img src="images/banner.png">
+        </div>
+    </header>
+
+    <main>
+        <div id="divisaoMainSuperior">
+            <h1>Conheça um pouco sobre nós:</h1>
+        </div>
+        <h2>Nossos Serviços</h1>
+        <section id="slideCarrossel">
+            <img id="carrosselImage">
+            <p id="tituloCarrossel"></p>
+            <p id="conteudoCarrossel"></p>
+            <form method="get" action="index.html">
+                <input id="tipoCotacao" type="hidden" value="">
+                <button type="submit">Solicitar cotação</button>
+            </form>
+        </section>
+        <!-- <div id="cotacaoBox"></div> -->
+    </main>
+
+    <footer>
+        <a id="linkFooter" href="https://www.linkedin.com/in/raphael-rodrigues-oliveira-b5675a174"><p>© Copyright 2024 - Raphael Rodrigues Oliveira</p></a>
+    </footer>
+</body>
+</html>
