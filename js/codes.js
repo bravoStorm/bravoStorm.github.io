@@ -19,25 +19,25 @@ async function startCarrossel(){
     $("#carrosselImage").attr("src", carrosselItens.bombeiro["path"]);
     $("#tituloCarrossel").text(carrosselItens.bombeiro["titulo"]);
     $("#conteudoCarrossel").text(carrosselItens.bombeiro["conteudo"]);
-    $("#tipoCotacao").value = carrosselItens.bombeiro["titulo"];
+    $("#tipoCotacao").attr("value",carrosselItens.bombeiro["titulo"]);
     while (true) {
         await new Promise(r => setTimeout(r, 6000));
         $("#carrosselImage").attr("src", carrosselItens.enfermeira["path"]);
         $("#tituloCarrossel").text(carrosselItens.enfermeira["titulo"]);
         $("#conteudoCarrossel").text(carrosselItens.enfermeira["conteudo"]);
-        $("#tipoCotacao").value = carrosselItens.enfermeira["titulo"];
+        $("#tipoCotacao").attr("value", carrosselItens.enfermeira["titulo"]);
 
         await new Promise(r => setTimeout(r, 6000));
         $("#carrosselImage").attr("src", carrosselItens.tecnico["path"]);
         $("#tituloCarrossel").text(carrosselItens.tecnico["titulo"]);
         $("#conteudoCarrossel").text(carrosselItens.tecnico["conteudo"]);
-        $("#tipoCotacao").value = carrosselItens.tecnico["titulo"];
+        $("#tipoCotacao").attr("value",carrosselItens.tecnico["titulo"]);
 
         await new Promise(r => setTimeout(r, 6000));
         $("#carrosselImage").attr("src", carrosselItens.bombeiro["path"]);
         $("#tituloCarrossel").text(carrosselItens.bombeiro["titulo"]);
         $("#conteudoCarrossel").text(carrosselItens.bombeiro["conteudo"]);
-        $("#tipoCotacao").value = carrosselItens.bombeiro["titulo"];
+        $("#tipoCotacao").attr("value",carrosselItens.bombeiro["titulo"]);
     }
 
 }
