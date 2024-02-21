@@ -30,17 +30,35 @@
         <div id="divisaoMainSuperior">
             <h1>Conheça um pouco sobre nós:</h1>
         </div>
-        <h2>Nossos Serviços</h1>
         <section id="slideCarrossel">
+            <h2>Nossos Serviços</h2>
             <img id="carrosselImage">
             <p id="tituloCarrossel"></p>
             <p id="conteudoCarrossel"></p>
-            <form method="get" action="index.html">
-                <input name="cotacao" id="tipoCotacao" type="hidden" value="">
-                <button type="submit">Solicitar cotação</button>
-            </form>
+            <!-- <form method="get" action="index.html"> -->
+            <!-- <input name="cotacao" id="tipoCotacao" type="hidden" value=""> -->
+            <button onclick="showCotacao()" type="submit">Solicitar cotação</button>
         </section>
-        <!-- <div id="cotacaoBox"></div> -->
+        <div id="cotacaoBox">
+            <form action=" ">
+                <p id="tituloCotacaoBox">Solicitação de Cotação</p>
+                <label for="servico">Serviço solicitado:</label>
+                <select name="servico">
+                    <option id="optBC" value="Bombeiro Civil">Bombeiro Civil</option>
+                    <option id="optEnf" value="Enfermeiro">Enfermeiro</option>
+                    <option id="optTST" value="Técnico de Segurança do Trabalho">Técnico de Segurança do Trabalho</option>
+                </select>
+                <label for="nome">Nome:</label>
+                <input name="nome" type="text" placeholder="Digite seu nome">
+                <label for="email">E-Mail:</label>
+                <input name="email" type="mail" placeholder="Digite seu E-Mail">
+                <label for="celular">Celular:</label>
+                <input name="celular" type="text" placeholder="(xx)xxxxx-xxx">
+                <label for="detCotacao">Detalhe a sua cotação:</label>
+                <textarea name="detCotacao" placeholder="Descreva a sua Solicitação"></textarea>
+                <button onclick="closeCotacao() " type="submit">Enviar</button>
+            </form>
+        </div>
     </main>
 
     <footer>

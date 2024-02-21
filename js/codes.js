@@ -1,9 +1,9 @@
 function changeDropListHeader(){
     let x = $("#headerNav");
     if(x.css("display") === "none"){
-        x.css("display","block")
+        x.css("display","block");
     }else{
-        x.css("display", "none")
+        x.css("display", "none");
     }
 }
 
@@ -11,7 +11,7 @@ function changeDropListHeader(){
 
 async function startCarrossel(){
     const carrosselItens = {
-        bombeiro: {"titulo":"Bombeiro Civil","path":"images/carrosselBombeiro.jpg", "num":1, "conteudo": "Nossos bombeiros civis são treinados rigorosamente para garantir a qualidade e exclência aos nossos clientes, colaboradores e do patrimônio."},
+        bombeiro: {"titulo":"Bombeiro Civil","path":"images/carrosselBombeiro.jpg", "num":1, "conteudo": "Nossos bombeiros civis são treinados rigorosamente para garantir a qualidade e excelência aos nossos clientes, colaboradores e do patrimônio."},
         enfermeira: {"titulo":"Enfermeiro","path":"images/carrosselEnfermeira.jpg", "num":2, "conteudo": ""},
         tecnico: {"titulo":"Téc. Segurança do Trabalho","path":"images/carrosselTecnico.jpeg", "num":3, "conteudo": ""}
     };
@@ -40,6 +40,25 @@ async function startCarrossel(){
         $("#tipoCotacao").attr("value",carrosselItens.bombeiro["titulo"]);
     }
 
+}
+
+function showCotacao(){
+    // $("body").css("filter", "blur(10px)");
+    $("#cotacaoBox").css("display", "block");
+
+    if($("#tituloCarrossel").text () === "Bombeiro Civil"){
+        $("#optBC").attr("selected","");
+    }if($("#tituloCarrossel").text () === "Enfermeiro"){
+        $("#optEnf").attr("selected","");
+    }if($("#tituloCarrossel").text () === "Téc. Segurança do Trabalho"){
+        $("#optBC").attr("selected","");
+    }
+
+
+}
+
+function closeCotacao(){
+    $("#cotacaoBox").css("display", "none");
 }
 
 window.onload = () =>{ startCarrossel()};
