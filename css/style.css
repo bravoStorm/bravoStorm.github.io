@@ -280,6 +280,17 @@ h5{
     border-radius: 20px;
 }
 
+#divisaoTrabalheConosco{
+    background-color: #ff3c45;
+    padding: 50px;
+    color: white;
+}
+
+#divisaoTrabalheConosco p{
+    font-size: 60px;
+    text-align: center;
+}
+
 #trabalheConoscoBox{
     margin-top: 10%;
     margin-bottom: 10%;
@@ -369,6 +380,10 @@ footer{
     margin-right: 2%;
 }
 
+.socialMediaIcon:hover{
+    background-color: black;
+    border-radius: 100px;
+}
 
 #linkFooter{
     
@@ -383,3 +398,6 @@ footer{
     margin: 0;
 }
 
+#linkFooter p:hover{
+    color:black
+}
