@@ -5,11 +5,8 @@
         padding: 0;
         margin: 0;
     }
-    
+
     /* HEADER */
-    
-    header{
-    }
     
     #barraHeader{
         padding: 0px;
@@ -141,6 +138,10 @@
         
     }
 
+    #slideCarrossel button:active{
+        color: black;
+    }
+
     #cotacaoBox{
         /* display: none; */
         padding: 40px;
@@ -214,6 +215,49 @@
         font-family: sans-serif;
         border: none;
         border-radius: 20px;
+    }
+
+    #cotacaoBox button:active{
+        color: black;
+    }
+
+    #escolaBox{
+        padding: 40px;
+    }
+    
+    #tituloEscolaBox{
+        text-align: center;
+        font-size: 45px;;
+        font-weight: bold;
+    }
+    
+    #conteudoEscolaBox{
+        font-family: 'Source Serif Pro', serif;
+        word-spacing:normal;
+        text-align: justify;
+        font-size: 35px;
+        text-indent: 5%;
+        padding-right: 150px;
+        padding-left: 150px;
+    }
+    
+    #botaoEscolaBox{
+        background-color: #ff3c45;
+        color: white;
+        padding: 20px;
+        font-size: 20px;
+        width: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+    }
+
+    #botaoEscolaBox:active{
+        color: black;
     }
     
     #quemSomosBox{
@@ -315,6 +359,10 @@
         border-radius: 20px;
     }
 
+    #faleConoscoBox button:active{
+        color: black;
+    }
+
     #divisaoTrabalheConosco{
         background-color: #ff3c45;
         padding: 50px;
@@ -406,6 +454,9 @@
         border-radius: 20px;
     }
 
+    #trabalheConoscoBox button:active{
+        color: black;
+    }
 
     /* FOOTER */
 
@@ -429,7 +480,7 @@
 
     .socialMediaIcon:hover{
         background-color: black;
-        border-radius: 50px;
+        border-radius: 60px;
     }
 
 
